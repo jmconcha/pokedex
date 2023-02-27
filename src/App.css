@@ -1,0 +1,122 @@
+.App-header {
+  padding: 20px;
+  text-align: center;
+}
+
+.App-header h1 {
+  font-weight: normal;
+  font-size: 2.5rem;
+}
+
+.App-content {
+  padding: 40px;
+  background-color: #fff;
+}
+
+.App-content .loading,
+.App-content .error {
+  padding: 160px 80px;
+  color: #333;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.App-content .cards {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 40px 30px;
+}
+
+.App-content .card {
+  padding: 10px 10px 20px;
+  background-color: #747474;
+  border-radius: 4px;
+  text-align: center;
+  transition: box-shadow 0.3s;
+}
+
+.App-content .card:hover {
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
+}
+
+.App-content .card .card-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.App-content .card .card-title {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.types-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pokemon-type {
+  flex: 1;
+  padding: 0 16px;
+  margin: 0 4px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+}
+
+.type-grass {
+  background-color: #83c27e;
+}
+
+.type-poison {
+  background-color: #c27ebc;
+}
+
+.type-fire {
+  background-color: #fd8900;
+}
+
+.type-water {
+  background-color: #051bd9;
+}
+
+.type-bug {
+  background-color: #99b100;
+}
+
+.App-footer {
+  padding: 40px;
+  text-align: center;
+  line-height: 1.8;
+  font-size: 0.95rem;
+}
+
+@media screen and (max-width: 992px) {
+  .App-content .cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .App-content .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .App-content .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .App-content .card .card-subtitle {
+    font-size: 1.5rem;
+  }
+
+  .App-content .card .card-title {
+    font-size: 2rem;
+  }
+
+  .pokemon-type {
+    font-size: 1rem;
+  }
+}
